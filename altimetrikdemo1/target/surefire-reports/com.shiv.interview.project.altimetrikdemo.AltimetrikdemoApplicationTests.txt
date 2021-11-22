@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.shiv.interview.project.altimetrikdemo.AltimetrikdemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.186 s <<< FAILURE! - in com.shiv.interview.project.altimetrikdemo.AltimetrikdemoApplicationTests
+contextLoads  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeRepository' defined in com.shiv.interview.project.altimetrikdemo.repository.EmployeeRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.AnnotationException: A Foreign key refering com.shiv.interview.project.altimetrikdemo.entity.Project from com.shiv.interview.project.altimetrikdemo.entity.Employee has the wrong number of column. should be 2
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.AnnotationException: A Foreign key refering com.shiv.interview.project.altimetrikdemo.entity.Project from com.shiv.interview.project.altimetrikdemo.entity.Employee has the wrong number of column. should be 2
+Caused by: org.hibernate.AnnotationException: A Foreign key refering com.shiv.interview.project.altimetrikdemo.entity.Project from com.shiv.interview.project.altimetrikdemo.entity.Employee has the wrong number of column. should be 2
+
